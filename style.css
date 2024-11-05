@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    background-image: url(sanrio\ icons\ \(1\).jfif);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+
+/* Estilo del contenedor del usuario */
+#user-info {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#fotoPerfil {
+    border-radius: 50%;
+    border: 2px solid #3b5998;
+}
+
+/* Botón para actualizar perfil */
+#user-info button {
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#user-info button:hover {
+    background-color: #9eace9;
+}
+
+/* Estilo del área de publicación */
+textarea {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid hsl(0, 100%, 88%);
+    margin-bottom: 10px;
+    resize: none;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botón de publicar */
+#publicar {
+    background-color: #ec4fab(255, 255, 255, 0.5); 
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#publicar:hover {
+    background-color: #ffa0a8;
+}
+
+/* Contenedor de publicaciones */
+#publicaciones {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Publicación individual */
+.publicacion {
+    background-color: rgba(255, 255, 255, 0.5); 
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.publicacion img {
+    border-radius: 8px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+/* Botones de editar y eliminar */
+.publicacion button {
+    background-color: #f6c7ff;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.publicacion button:hover {
+    background-color: #ffbcff;
+}
+
+/* Modal de actualización */
+.modal-content {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Modal botones */
+.modal-footer button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo del botón principal en el modal */
+.modal-footer .btn-primary {
+    background-color: #b6003d;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #9b005a;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #user-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    textarea, 
+    #publicaciones {
+        width: 90%;
+    }
+
+    #fotoPerfil {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    #fotoPerfil {
+        width: 60px;
+        height: 60px;
+    }
+
+    #user-info h2 {
+        font-size: 1.2rem;
+    }
+}
